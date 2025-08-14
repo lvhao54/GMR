@@ -12,6 +12,7 @@ ROBOT_XML_DICT = {
     "engineai_pm01": ASSET_ROOT / "engineai_pm01" / "pm_v2.xml",
     "kuavo_s45": ASSET_ROOT / "kuavo_s45" / "biped_s45_collision.xml",
     "hightorque_hi": ASSET_ROOT / "hightorque_hi" / "hi_25dof.xml",
+    "adam_sp_pro": ASSET_ROOT / "adam_sp_pro" / "adam_sp_pro.xml",
 }
 
 IK_CONFIG_DICT = {
@@ -31,6 +32,10 @@ IK_CONFIG_DICT = {
         "fourier_n1": IK_CONFIG_ROOT / "bvh_to_n1.json",
         "stanford_toddy": IK_CONFIG_ROOT / "bvh_to_toddy.json",
         "engineai_pm01": IK_CONFIG_ROOT / "bvh_to_pm01.json",
+        "adam_sp_pro": IK_CONFIG_ROOT / "bvh_to_adam_sp_pro.json",
+    },
+    "bvh_noitom":{
+        "adam_sp_pro": IK_CONFIG_ROOT / "bvh_noitom_to_adam_sp_pro.json",
     },
     "fbx":{
         "unitree_g1": IK_CONFIG_ROOT / "fbx_to_g1.json",
@@ -46,6 +51,7 @@ ROBOT_BASE_DICT = {
     "engineai_pm01": "LINK_BASE",
     "kuavo_s45": "base_link",
     "hightorque_hi": "base_link",
+    "adam_sp_pro": "pelvis",
 }
 
 VIEWER_CAM_DISTANCE_DICT = {
@@ -56,4 +62,5 @@ VIEWER_CAM_DISTANCE_DICT = {
     "engineai_pm01": 2.0,
     "kuavo_s45": 2.0,
     "hightorque_hi": 2.0,
+    "adam_sp_pro": 2.0,
 }
